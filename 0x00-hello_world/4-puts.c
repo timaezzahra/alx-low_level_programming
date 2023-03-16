@@ -1,7 +1,10 @@
 #include <stdio.h>
-int main()
+/**
+ * main - A program that prints what is in puts function
+ * Return: 0 (Success)
+ */
+int main(void)
 {
-char Mytxt[] = "\"Programming is like building a multilingual puzzle";
-puts(Mytxt);
-return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
