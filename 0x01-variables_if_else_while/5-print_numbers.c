@@ -8,7 +8,7 @@
 int main(void)
 {
 	int Nb;
-		for (Nb = 0; Nb <= 10; Nb++)
+		for (Nb = 0; Nb < 10; Nb++)
 	{
 		printf("%d", Nb);
 	}
