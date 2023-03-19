@@ -11,22 +11,19 @@ int main(void)
 	int nh;
 		for (nb = 0 ; nb <= 98; nb++)
 		{
-			for (nh = nb; nh <= 99; nh++)
+			for (nh = nb + 1; nh <= 99; nh++)
 			{
-				if (nh != nb)
-				{
-					putchar((nb / 10) + '0');
-					putchar((nb % 10) + '0');
-					putchar(' ');
-					putchar((nh / 10) + '0');
-					putchar((nh % 10) + '0');
-				}
-			}
+				putchar((nb / 10) + '0');
+				putchar((nb % 10) + '0');
+				putchar(' ');
+				putchar((nh / 10) + '0');
+				putchar((nh % 10) + '0');
 				if (nb != 98)
 				{
 					putchar(',');
 					putchar(' ');
 				}
+			}
 		}
 		putchar('\n');
 return (0);
