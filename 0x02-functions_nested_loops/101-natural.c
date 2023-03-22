@@ -20,7 +20,7 @@ int main(void)
 			i++;
 		}
 		else
-			i++
+			i++;
 	}
 	printf("%ld\n", sum);
 	return (0);
