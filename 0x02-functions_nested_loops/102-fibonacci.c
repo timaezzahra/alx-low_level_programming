@@ -15,7 +15,7 @@ int main(void)
 	while (i < 50)
 	{
 		printf("%lu", first);
-		if (i <49)
+		if (i < 49)
 		{
 			second += first;
 			first = second - first;
