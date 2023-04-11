@@ -9,7 +9,7 @@
   * Return: 0
   */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int a, i, res;
 	int coins[] = {25, 10, 5, 2, 1};
