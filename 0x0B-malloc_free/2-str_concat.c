@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "\0";
 	sizes1 = _strlen(s1);
 	sizes2 = _strlen(s2);
-	c = malloc((sizes1 + sizes2) * sizeof(char) +1 );
+	c = malloc((sizes1 + sizes2) * sizeof(char) + 1);
 	if (c == 0)
 		return (0);
 	for (i = 0; i <= sizes1 + sizes2; i++)
