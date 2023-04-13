@@ -29,12 +29,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *t;
 	int i;
 
-	i = nmemb * sizeof(int);
-	t = malloc(nmemb * sizeof(int));
-
-	if (t == NULL)
-		return (0);
 	if (nmemb == 0 || size == 0)
+		return (NULL);
+	i = nmemb * size;
+	t = malloc(nmemb * size);
+
+	if (t == 0)
 		return (NULL);
 	_memset(t, 0, i);
 
