@@ -1,5 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+
+/**
+  * _memset - initalize a memory
+  * @m: par1
+  * @a: int
+  * @b: bytes
+  * Return: m
+  */
+char *_memset(char *m, char a, unsigned int b)
+{
+	char *s = m;
+
+	while (b--)
+		*m++ = a;
+	return (s);
+}
 
 /**
   * *_calloc - allocates memory for an array, using malloc.
@@ -9,8 +26,8 @@
   */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *t;
 	int i;
-	int *t;
 
 	i = nmemb * size;
 	t = malloc(nmemb * size);
@@ -19,10 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (0);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	while (i--)
-	{
-		*t = 0;
-	}
+	_memset(t, 0, i);
 
 	return (t);
 }
