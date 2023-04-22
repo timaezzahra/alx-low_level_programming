@@ -34,11 +34,12 @@ char *_strcpy(char *dest, char *s)
 	return (dest);
 }
  /**
-  * new_dog - create a new dog
-  * @name: dog'sname
-  * @age: dog's age
-  * @owner: dog's owner
-  * Return: pointer dog
+   * new_dog - a function that creates a new dog.
+   *
+   * @name: dog'sname
+   * @age: dog's age
+   * @owner: dog's owner
+   * Return: pointer dog
   */
 
 dog_t *new_dog(char *name, float age, char *owner)
