@@ -12,7 +12,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 	if (head == NULL)
 		return (NULL);
-	for (end = head->next; adress != NULL; adress = adress->next)
+	for (adress = head->next; adress != NULL; adress = adress->next)
 	{
 		if (adress == adress->next)
 			return (adress);
